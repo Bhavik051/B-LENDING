@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bhavik Nandwani | Expert Mortgage Agent | B-Lending Specialist | Brevity Mortgages</title>
+  <title>Bhavik Nandwani | Expert Mortgage Agent | Brevity Capital</title>
+  <meta name="description" content="Bhavik Nandwani, Mortgage Agent at Brevity Capital, specializes in B-Lending and alternative mortgage solutions. Contact Bhavik for personalized mortgage services in Mississauga and beyond." />
   <style>
-    /* Reset and base */
-    * {
+    /* Reset */
+    *, *::before, *::after {
       box-sizing: border-box;
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f7fa;
-      color: #2c3e50;
+      margin: 0; padding: 0;
+      background: #f9fbfd;
+      color: #222;
       line-height: 1.6;
     }
     a {
-      color: #1e90ff;
+      color: #0073e6;
       text-decoration: none;
     }
     a:hover {
@@ -27,118 +27,241 @@
     .container {
       max-width: 960px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     header {
-      background: #1e90ff;
+      background-color: #0073e6;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
     header h1 {
-      margin-bottom: 0.3rem;
       font-size: 2.8rem;
-      font-weight: 700;
+      margin-bottom: 0.3rem;
     }
     header p {
-      margin: 0.3rem 0;
+      font-size: 1.25rem;
       font-weight: 500;
-      font-size: 1.15rem;
     }
-    section {
-      background: white;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-    }
-    h2 {
-      color: #1e90ff;
-      margin-bottom: 1rem;
-      border-bottom: 3px solid #1e90ff;
-      padding-bottom: 0.5rem;
-      font-weight: 700;
-    }
-    p {
-      margin-bottom: 1rem;
-      font-size: 1.05rem;
-    }
-    ul.services-list {
-      list-style: none;
-      padding-left: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 12px;
-    }
-    ul.services-list li {
-      background: #eaf4ff;
-      padding: 0.75rem 1rem;
-      border-radius: 6px;
-      font-weight: 600;
-      color: #1a73e8;
+    /* Intro Section */
+    .intro {
       display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 8px;
-      position: relative;
+      margin-bottom: 2rem;
     }
-    ul.services-list li::before {
-      content: "✓";
-      color: #1e90ff;
-      font-weight: 900;
-      margin-right: 6px;
-      font-size: 1.2rem;
-      position: absolute;
-      left: 8px;
+    .intro img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border: 4px solid #0073e6;
+      flex-shrink: 0;
     }
-    .button {
-      display: inline-block;
-      background: #1e90ff;
-      color: white;
-      font-weight: 700;
-      padding: 0.75rem 2rem;
-      border-radius: 50px;
+    .intro-text {
+      flex: 1;
+      min-width: 260px;
+    }
+    .intro-text h2 {
+      color: #0073e6;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .intro-text p {
+      margin-bottom: 1rem;
       font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-      margin-top: 1rem;
-      text-align: center;
     }
-    .button:hover {
-      background: #155bb5;
+    /* Contact Info */
+    .contact-info {
+      background: #eaf3ff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: inset 0 0 10px #cde0ff;
+    }
+    .contact-info h2 {
+      color: #005bb5;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
     .contact-info p {
       font-size: 1.1rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
     .contact-info a {
       font-weight: 700;
     }
-    .location p {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 0.4rem;
+    /* Social Media */
+    .social-links {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      text-align: center;
     }
+    .social-links a {
+      margin: 0 15px;
+      color: #0073e6;
+      font-weight: 600;
+    }
+    .social-links a:hover {
+      color: #005bb5;
+    }
+    /* Testimonials */
     .testimonials {
-      background: #e0f0ff;
-      border-left: 5px solid #1e90ff;
+      margin-bottom: 2rem;
+    }
+    .testimonials h2 {
+      color: #0073e6;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .testimonial {
+      background: #f0f7ff;
+      border-left: 6px solid #0073e6;
       padding: 1rem 1.5rem;
       margin-bottom: 1rem;
       font-style: italic;
       border-radius: 6px;
+      color: #004a99;
       font-size: 1.1rem;
-      color: #1a3f6e;
     }
+    .testimonial cite {
+      display: block;
+      margin-top: 0.6rem;
+      font-style: normal;
+      font-weight: 700;
+      color: #003366;
+    }
+    /* Google Reviews */
+    .google-reviews {
+      margin-bottom: 2rem;
+    }
+    .google-reviews h2 {
+      color: #0073e6;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .review {
+      background: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+    .review-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      gap: 0.8rem;
+    }
+    .review-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid #0073e6;
+    }
+    .review-name {
+      font-weight: 700;
+      color: #005bb5;
+      font-size: 1.05rem;
+    }
+    .review-rating {
+      margin-left: auto;
+      color: #ffb400;
+      font-size: 1.1rem;
+    }
+    .review-text {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #333;
+    }
+    /* Contact Form */
+    form {
+      background: #eaf3ff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: inset 0 0 15px #cde0ff;
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+    }
+    form h2 {
+      color: #0073e6;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #004a99;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
+      border: 1.5px solid #ccc;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+    input:focus, textarea:focus {
+      border-color: #0073e6;
+      outline: none;
+      box-shadow: 0 0 5px #99caff;
+    }
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    /* Google Map */
+    .map-container {
+      margin-bottom: 3rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      height: 350px;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* Footer */
     footer {
       text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      color: #555;
-      background: #f0f3f5;
-      border-top: 1px solid #ddd;
+      padding: 1.5rem 1rem;
+      background: #0073e6;
+      color: white;
+      font-weight: 600;
     }
-    @media (max-width: 600px) {
-      ul.services-list {
-        grid-template-columns: 1fr;
+    /* Responsive */
+    @media (max-width: 650px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro img {
+        margin-bottom: 1rem;
       }
     }
   </style>
@@ -147,85 +270,117 @@
 
 <header>
   <h1>Bhavik Nandwani</h1>
-  <p>Mortgage Agent | FSCO License #M23005350</p>
-  <p>Serving Mississauga, Ontario & Beyond</p>
+  <p>Mortgage Agent at Brevity Capital | License #M23005350</p>
 </header>
 
-<main class="container">
-
-  <section aria-label="About Bhavik Nandwani">
-    <h2>About Bhavik</h2>
-    <p>Bhavik Nandwani is a passionate and highly skilled Mortgage Agent at Brevity Mortgages, specializing in <strong>B-Lending and Alternative Mortgage Solutions</strong> for clients who need flexible options beyond traditional lenders.</p>
-    <p>With deep expertise navigating complex credit situations, self-employed incomes, and unique financing needs, Bhavik helps homebuyers, investors, and refinancers secure the right mortgage solutions tailored to their personal and financial goals.</p>
-    <p>Bhavik’s client-first approach emphasizes transparency, education, and personalized guidance throughout every step of the mortgage process — making homeownership possible and stress-free.</p>
-    <p>Whether you’re a first-time buyer, self-employed, rebuilding credit, or exploring creative lending options, Bhavik leverages a wide network of lenders and innovative programs to find mortgage solutions that fit your situation.</p>
-    <p><a href="https://brevitymortgages.com/team-detail/bhavik-nandwani" target="_blank" rel="noopener" aria-label="More about Bhavik on Brevity Mortgages website">Learn more on Brevity Mortgages</a></p>
-  </section>
-
-  <section aria-label="Contact Information">
-    <h2>Get In Touch</h2>
-    <div class="contact-info">
-      <p><strong>Phone:</strong> <a href="tel:+19058144455" aria-label="Call Bhavik Nandwani">+1 (905) 814-4455</a></p>
-      <p><strong>Email:</strong> <a href="mailto:bhavik@brevitymortgages.com" aria-label="Email Bhavik Nandwani">bhavik@brevitymortgages.com</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/19058144455" target="_blank" rel="noopener" aria-label="Chat with Bhavik on WhatsApp">Chat on WhatsApp</a></p>
+<div class="container">
+  <section class="intro" aria-label="About Bhavik Nandwani">
+    <img src="bhavik-nandwani.jpg" alt="Photo of Bhavik Nandwani" />
+    <div class="intro-text">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Bhavik Nandwani</strong>, a dedicated mortgage agent at Brevity Capital. I specialize in <strong>B-Lending and alternative mortgage solutions</strong>, helping clients secure financing even in complex situations.</p>
+      <p>Whether you're a first-time buyer, self-employed, rebuilding credit, or seeking creative lending options, I am here to guide you through every step of the mortgage process.</p>
+      <p>With a client-first approach, I provide personalized mortgage solutions tailored to your unique financial goals — ensuring a smooth, transparent, and stress-free experience.</p>
+      <p>Serving clients in Mississauga, Cambridge, and beyond.</p>
+      <p><a href="https://brevitymortgages.com/team-detail/bhavik-nandwani" target="_blank" rel="noopener" aria-label="Learn more about Bhavik on Brevity Mortgages website">Learn more on Brevity Mortgages</a></p>
     </div>
   </section>
 
-  <section aria-label="Mortgage Services Offered">
-    <h2>Mortgage Services</h2>
-    <ul class="services-list" role="list">
-      <li>First-Time Home Buyer Mortgages</li>
-      <li>Refinancing & Debt Consolidation</li>
-      <li>Pre-Approval & Mortgage Planning</li>
-      <li>Low Income & Bad Credit Mortgages</li>
-      <li>Self-Employed & Commission-Based Income</li>
-      <li>Private & Alternative Lending (B-Lending)</li>
-      <li>Commercial & Investment Property Financing</li>
-      <li>Second Mortgages & Home Equity Lines of Credit (HELOC)</li>
-      <li>Reverse Mortgages for Seniors</li>
-      <li>Mortgage Renewal & Rate Negotiation</li>
-    </ul>
+  <section class="contact-info" aria-label="Contact Information">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> <a href="tel:+19058144455">+1 (905) 814-4455</a></p>
+    <p><strong>Email:</strong> <a href="mailto:bhavik.nandwani@brevitycapital.com">bhavik.nandwani@brevitycapital.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/19058144455" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
   </section>
 
-  <section aria-label="Office Locations">
-    <h2>Office Locations</h2>
-    <div class="location">
-      <p><strong>Mississauga:</strong> 6345 Dixie Road, Unit 2-3, L5T 2E6</p>
-      <p><strong>Cambridge:</strong> 688 Hespeler Road, Unit 1-B, N1R 8N7</p>
-    </div>
-  </section>
-
-  <section aria-label="Apply Online Call to Action">
-    <h2>Start Your Mortgage Application Today</h2>
-    <p>Ready to make your dream home a reality? Apply online quickly and securely through our streamlined application process.</p>
-    <a href="https://brevitymortgages.com/apply-mortgage-online" target="_blank" rel="noopener" class="button" aria-label="Apply for mortgage online">Apply Now</a>
-  </section>
-
-  <section aria-label="Client Testimonials">
-    <h2>Client Testimonials</h2>
-    <div class="testimonials" role="blockquote">
-      <p>"Bhavik made our first home purchase seamless. His guidance and support were invaluable." <br><strong>– Satisfied Client</strong></p>
-    </div>
-    <div class="testimonials" role="blockquote">
-      <p>"Professional, knowledgeable, and always available. Highly recommend Bhavik for any mortgage needs." <br><strong>– Happy Homeowner</strong></p>
-    </div>
-  </section>
-
-  <section aria-label="Social Media and Website Links">
-    <h2>Connect with Brevity Mortgages</h2>
+  <section class="social-links" aria-label="Social Media Links">
+    <h2>Connect with Me</h2>
     <p>
-      <a href="https://brevitymortgages.com/" target="_blank" rel="noopener" aria-label="Brevity Mortgages Website">Website</a> | 
-      <a href="https://www.facebook.com/brevitymortgages" target="_blank" rel="noopener" aria-label="Brevity Mortgages Facebook">Facebook</a> | 
-      <a href="https://www.instagram.com/brevitymortgages/" target="_blank" rel="noopener" aria-label="Brevity Mortgages Instagram">Instagram</a> | 
-      <a href="https://www.linkedin.com/company/brevitymortgages/" target="_blank" rel="noopener" aria-label="Brevity Mortgages LinkedIn">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/bhavik-nandwani-555101146" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a> | 
+      <a href="https://www.instagram.com/bnmortgages_5/" target="_blank" rel="noopener" aria-label="Instagram profile">Instagram</a> | 
+      <a href="https://www.facebook.com/bhavik.nandwani.1" target="_blank" rel="noopener" aria-label="Facebook profile">Facebook</a>
     </p>
   </section>
 
-</main>
+  <section class="testimonials" aria-label="Client Testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>"The team at Brevity Capital literally made my dreams come true! With their help, I was able to buy a commercial unit for my business. I got an excellent rate. Moreover, I was informed and guided throughout the whole process. Highly knowledgeable & experienced staff. I would give 10 stars if I could. Thank you so much once again, guys!"</p>
+      <cite>– Victoria Sanchez</cite>
+    </div>
+    <div class="testimonial">
+      <p>"I have been dealing with Brevity Capital for all my mortgages for the last few years and they have always helped me in the utmost professional way and got my mortgages closed on time. They even closed my mortgage without any hassle when my closing date was just around the corner. They are a strong team of professionals and they treat all their clients very well. I have referred them to all my friends for their mortgages and they have never let us down. Keep up with the good work!!"</p>
+      <cite>– Dipin Grover</cite>
+    </div>
+  </section>
+
+  <section class="google-reviews" aria-label="Google Reviews">
+    <h2>Google Reviews</h2>
+    <div class="review">
+      <div class="review-header">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer avatar" />
+        <span class="review-name">Victoria Sanchez</span>
+        <span class="review-rating">★★★★★</span>
+      </div>
+      <p class="review-text">"The team at Brevity Capital literally made my dreams come true! Excellent rates and amazing guidance."</p>
+    </div>
+    <div class="review">
+      <div class="review-header">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer avatar" />
+        <span class="review-name">Dipin Grover</span>
+        <span class="review-rating">★★★★★</span>
+      </div>
+      <p class="review-text">"Professional, timely, and excellent support throughout the mortgage process."</p>
+    </div>
+  </section>
+
+  <section aria-label="Mortgage Inquiry Contact Form">
+    <form id="contactForm" method="POST" action="https://formspree.io/f/mzbqndgy" novalidate>
+      <h2>Contact Me</h2>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+      
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="_replyto" required placeholder="Your email" />
+      
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required placeholder="+1 905 814 4455" pattern="^\+?[0-9\s\-]{7,15}$" />
+      
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section aria-label="Office Location Map">
+    <h2 style="color:#0073e6; text-align:center; margin-bottom:1rem;">Office Location</h2>
+    <div class="map-container">
+      <iframe
+        title="Brevity Capital Mississauga Office"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.313720702097!2d-79.61404008450084!3d43.6266766791216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4265d65c5f1b%3A0xb1f063d1071c70d1!2s6345%20Dixie%20Rd%2C%20Mississauga%2C%20ON%20L5T%202E6%2C%20Canada!5e0!3m2!1sen!2sus!4v1620924892385!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+</div>
 
 <footer>
-  &copy; 2025 Brevity Mortgages | Licensed Mortgage Agent Bhavik Nandwani
+  &copy; 2025 Brevity Capital | Licensed Mortgage Agent Bhavik Nandwani
 </footer>
+
+<script>
+  // Basic form validation feedback
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (e) {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      alert('Please fill out all required fields correctly.');
+    }
+  });
+</script>
 
 </body>
 </html>
